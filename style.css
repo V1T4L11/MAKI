@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.my_header {
+	width: 100%;
+	background-color: grey;
+}
+
+.my_header_inner {
+	max-width: 1280px;
+	margin: 0 auto;
+	font-family: monospace, sans-serif;
+	background-color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+}
+
+.my_header_second {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+}
+
+.header_nav {
+	display: flex;
+	/*height: 40px;*/
+}
+
+.header_nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 17px;
+	padding: 0 10px;
+	line-height: 70px;
+}
+
+.form_search {
+	position: relative;
+	width: 300px;
+	height: auto;
+}
+
+.form_search input {
+	height: 40px;
+	width: 100%;    /*видимість тексту шукати тут*/
+	padding: 0 40px 0 15px;    /*відступи тексту "шукати тут"*/
+	border: none;
+	opacity: 0;
+	border-bottom: 2px solid transparent;
+	outline: none;
+	background: transparent;
+	transition: .4s cubic-bezier(0, 0.8, 0, 1);     /*швидкуість і місце появи стрічки пошуку*/
+	position: relative;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.form_search input:focus {    /*виїздна лінія пошуку*/
+	opacity: 1;
+	z-index: 1;
+	border-bottom: 2px solid #ff6d6d;
+}
+
+.form_search button {
+	background: white;
+	border-style: solid;
+	border-color: #ff6d6d;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	/*pointer-events: none;*/
+}
+
+.form_search img {
+    max-height: 100%;
+    width: auto;
+}
+
+.form_search button:before {
+	/*content: "\1f50d";*/
+	font-size: 17px;
+	color: #f9f0da;
+}
+
+.header_image {
+	height: 500px;
+	background-image: url(images/poppy_flowers.jpg);
+	background-size: cover;
+}
