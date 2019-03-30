@@ -91,7 +91,40 @@ body {
 }
 
 .header_image {
-	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 515px;
 	background-image: url(images/poppy_flowers.jpg);
 	background-size: cover;
+	background-position: bottom;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.header_image_tape {
+	display: flex;
+	justify-content: space-between;
+	height: 95px;
+	
+}
+
+.header_image_tape a {
+	text-decoration: none;
+	color: #212121;
+}
+
+.button_basket {
+	background: #ff6d6d;
+	height: 40px;
+	width: 150px;
+	cursor: pointer;
+	color: white;
+}
+
+.header_image_menu {
+	display: flex;
+	justify-content: space-around;
+	background: rgba(255,255,255,.6);
+	height: 184px;
 }
