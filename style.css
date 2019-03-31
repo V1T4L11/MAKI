@@ -69,7 +69,7 @@ body {
 .form_search button {
 	background: white;
 	border-style: solid;
-	border-color: #ff6d6d;
+	border-color: #ff9999;
 	height: 40px;
 	width: 40px;
 	position: absolute;
@@ -94,7 +94,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	height: 515px;
+	height: 510px;
 	background-image: url(images/poppy_flowers.jpg);
 	background-size: cover;
 	background-position: bottom;
@@ -115,7 +115,7 @@ body {
 }
 
 .button_basket {
-	background: #ff6d6d;
+	background: #ff9999;
 	height: 40px;
 	width: 150px;
 	cursor: pointer;
@@ -125,6 +125,12 @@ body {
 .header_image_menu {
 	display: flex;
 	justify-content: space-around;
+	align-self: stretch;
 	background: rgba(255,255,255,.6);
-	height: 184px;
+	height: 160px;
+}
+
+.header_image_menu a {
+	text-decoration: none;
+	color: black;
 }
