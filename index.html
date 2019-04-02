@@ -11,7 +11,7 @@
 
 <body class="my_body">
 	<header class="my_header">
-		<div class="my_header_inner">		<!-- розмір для хедера-->
+		<div class="my_inner">		<!-- розмір для хедера-->
 		  <div class="my_header_second">    <!-- стрічка з навігацією і пошуком-->
 		    <nav class="header_nav">    <!-- кнопки навігації-->
 			  <a href="dostavka">Доставка</a>
@@ -60,18 +60,39 @@
 		</div>		<!-- закриваємо розмір для хедера-->
 	</header>
 
-	<div class="section_catalog">
-		<div class="section_catalog_size">
-			<div class="section_catalog_goods">
+	<div class="my_header">		<!-- встановлюємо розмір 100% для каталога-->
+		<div class="my_inner">		<!-- розмір 1280рх і відступи для каталога і фільтрів-->
+			<div class="my_body_flex">		<!-- флекс для каталога товарів-->
+				<div class="section_catalog_filters">		<!-- шахматка для каталога товарів-->
+					<div class="product_item">		<!-- карточка товару-->
+  						<div class="product_img">
+    						<a href="#">
+      						<img src="images/icon_composition.png">
+    						</a>
+  						</div>
+  						<div class="product_list">
+    						<h3>Новорічний подарунок</h3>
+    							<span class="price">2000грн.</span>
+    							<div class="actions">
+      								<div class="add-to-cart">
+        								<a href="" class="cart-button">Замовити</a>
+      								</div>
+      							</div>
+    					</div>
+					</div>		<!-- закриваємо карточку товарів-->
 
-			</div>
+				</div>		<!-- закриваємо шахматку для каталога товарів-->
+			</div>		<!-- закриваємо флекс для каталога товарів-->
+
 			<div class="section_catalog_filters">
 			
 			</div>
 			<div class="section_catalog_search">
 				
 			</div>
-		</div>
+			</div>		<!-- закриваємо розмір 1280рх і відступи для каталога і фільтрів-->
+	</div>		<!-- закриваємо розмір 100% для каталога-->
 	</div>
+
 </body>
 </html>
