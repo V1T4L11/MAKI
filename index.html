@@ -22,12 +22,12 @@
 		    </nav>    <!-- закінчення навігації-->
 		      <form class="form_search">    <!-- форма пошуку-->
 		  	    <input type="search" placeholder="Шукати тут...">
-		  	      <button type="submit"><img src="images/button_search.png" alt="search button"></button>
+		  	      <button type="button"><img src="images/button_search.png" alt="search button"></button>
 		      </form>    <!-- закінчення форми пошуку-->
 		  </div>    <!-- закінчення стрічки з навігацією і пошуком-->
 		<div class="header_image">    <!-- заголовна картинка з маками, стрічкою з лого і меню букетів-->
 			<div class="header_image_tape">    <!-- стрічка з лого, адресою і корзиною-->
-					<a href="maki.ua"><img src="images/logo.png" alt="маки"><p>Інтернет-магазин квітів</p></a>
+					<a href="maki.ua"><img src="images/logo.png" alt="маки"><h1>Інтернет-магазин квітів</h1></a>
 					  <div class="header_image_tape_adress">
 					  <span><strong>м.Хмельницький,</strong></span> вул.Вашингтона, 1<br>
 					  <a href="mailto:buket@maki.com"> e-mail:&nbsp;buket@maki.com<br></a>
@@ -63,9 +63,7 @@
 
 
 	<div class="my_header">		<!-- встановлюємо розмір 100% для каталога-->
-		
-
-    <div class="my_inner">		<!-- розмір 1280рх і відступи для каталога і фільтрів-->
+		<div class="my_inner">		<!-- розмір 1280рх і відступи для каталога і фільтрів-->
 			<div class="my_inner_flex">    <!-- flex для поділу 75 на 25%-->
 
       <div class="my_body_flex">		<!-- 75% флекс для каталога товарів-->
@@ -197,15 +195,16 @@
 				</div>		<!-- закриваємо шахматку для каталога товарів-->
 			</div>		<!-- закриваємо флекс для каталога товарів-->
 
-    <div class="flex_filters_search">
+    <div class="flex_filters_search">   <!-- розмір 75% для фільтрів-->
 
 			<div class="section_catalog_filters">
+        <button class="button_filters" type="button"><img src="images/icon_filters.png"><span class="">ФІЛЬТР</button>
 			
 			</div>
 			<div class="section_catalog_search">
 				
 			</div>
-    </div>
+    </div>    <!-- закриваємо розмір 75% для фільтрів-->
 			</div>   <!-- закриваємо flex для поділу на два стовчика-->
       </div>		<!-- закриваємо розмір 1280рх і відступи для каталога і фільтрів-->
 	</div>		<!-- закриваємо розмір 100% для каталога-->
