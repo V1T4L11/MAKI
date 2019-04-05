@@ -195,16 +195,34 @@
 				</div>		<!-- закриваємо шахматку для каталога товарів-->
 			</div>		<!-- закриваємо флекс для каталога товарів-->
 
-    <div class="flex_filters_search">   <!-- розмір 75% для фільтрів-->
+    <div class="flex_filters_search">   <!-- розмір 25% для фільтрів-->
 
 			<div class="section_catalog_filters">
-        <button class="button_filters" type="button"><img src="images/icon_filters.png"><span class="">ФІЛЬТР</button>
-			
+        <button class="button_filters" type="button"><img src="images/icon_filters.png"><span class="text_filter">ФІЛЬТР</button>
 			</div>
-			<div class="section_catalog_search">
+        <p>Ціна:</p>
+        <div>
+        <input type="range" id="start" name="price" min="0" max="5000" step="any">
+        </div>
+    
+			<div class="form_composition">
+        <p>Букети з:</p>
+        <label><input type="checkbox" ...>Роз</label>
+        <label><input type="checkbox" ...>Лілій</label>
+        <label><input type="checkbox" ...>Орхідей</label>
+        <label><input type="checkbox" ...>Гербер</label>
+      
+          <p>Кому:</p>
+        <label><input type="checkbox" ...>Жінкам</label>
+        <label><input type="checkbox" ...>Чоловікам</label>
+        <label><input type="checkbox" ...>Дітям</label>
+        <label><input type="checkbox" ...>Сімї</label>
+      </div>
+
+      <div class="section_catalog_search">
 				
 			</div>
-    </div>    <!-- закриваємо розмір 75% для фільтрів-->
+    </div>    <!-- закриваємо розмір 25% для фільтрів-->
 			</div>   <!-- закриваємо flex для поділу на два стовчика-->
       </div>		<!-- закриваємо розмір 1280рх і відступи для каталога і фільтрів-->
 	</div>		<!-- закриваємо розмір 100% для каталога-->

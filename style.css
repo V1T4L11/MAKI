@@ -216,6 +216,10 @@ body {
 	width: 25%;
 }
 
+.section_catalog_filters {
+	display: flex;
+}
+
 .button_filters {
 	border-bottom: 2px solid transparent;
 	border-color: #ff6d6d;
@@ -223,3 +227,9 @@ body {
 	height: 50px;
 	width: 150px;
 }
+
+.text_filter {
+	margin-left: 15px;
+	font-size: 15px;
+}
+
