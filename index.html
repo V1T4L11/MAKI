@@ -31,7 +31,7 @@
 					  <div class="header_image_tape_adress">
 					  <span><strong>м.Хмельницький,</strong></span> вул.Вашингтона, 1<br>
 					  <a href="mailto:buket@maki.com"> e-mail:&nbsp;buket@maki.com<br></a>
-					  <p><a href="tel:+380123456789"><img src="images/icon_phone.png" alt="phone"><span style="font-size:18; color:pink">+38(012)</span><span style="font-size: 42">&nbsp;345&nbsp;67&nbsp;89</span></a><br>
+					  <p><a href="tel:+380123456789"><img src="images/icon_phone.png" alt="phone"><span style="font-size: 18px; color:#ff9999">+38(012)</span><span style="font-size: 24px">&nbsp;345&nbsp;67&nbsp;89</span></a><br>
 					  </div>
 					  	<button class="button_basket" type="button">КОРЗИНА</button>
 			</div>    <!-- стрічка з лого, адресою і корзиною-->
@@ -75,7 +75,8 @@
           <div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/catalog_3.jpg">
+                  <img class="new_hit" src="images/price_hit.png">
+      						<img class="photo" src="images/catalog_3.jpg">                  
     						</a>
   						</div>
   						<div class="product_list">
@@ -90,7 +91,8 @@
 					<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_rose.jpg">
+      						<img class="new_hit" src="images/price_new.png">
+                  <img class="photo" src="images/icon_rose.jpg">
     						</a>
   						</div>
   						<div class="product_list">
@@ -105,14 +107,15 @@
 										<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_rose.png">
+      						<img class="new_hit" src="images/price_action.png">
+                  <img class="photo" src="images/icon_rose.png">
     						</a>
   						</div>
   						<div class="product_list">
     						<a href="#">
     						Букет з альстромерій і коробка цукерок Rafaello
     						</a>
-    							<p><span class="price">1562 грн.</span></p>
+    							<p><span class="price"><del>1562 грн.</del><span style="color: red">1400грн.</span></span></p>
     								<button class="button_order" type="button">Замовити</button>							
       					</div>
 					</div>		<!-- закриваємо карточку товарів-->
@@ -120,7 +123,7 @@
 					<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_composition.png">
+      						<img class="photo" src="images/icon_composition.png">
     						</a>
   						</div>
   						<div class="product_list">
@@ -135,7 +138,7 @@
 										<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_composition.png">
+      						<img class="photo" src="images/icon_composition.png">
     						</a>
   						</div>
   						<div class="product_list">
@@ -150,7 +153,7 @@
 					<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_composition.png">
+      						<img class="photo" src="images/icon_composition.png">
     						</a>
   						</div>
   						<div class="product_list">
@@ -165,7 +168,7 @@
 										<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_composition.png">
+      						<img class="photo" src="images/icon_composition.png">
     						</a>
   						</div>
   						<div class="product_list">
@@ -180,7 +183,7 @@
 					<div class="product_item">		<!-- карточка товару-->
   						<div class="product_img">
     						<a href="#">
-      						<img src="images/icon_composition.png">
+      						<img class="photo" src="images/icon_composition.png">
     						</a>
   						</div>
   						<div class="product_list">
@@ -200,32 +203,101 @@
 			<div class="section_catalog_filters">
         <button class="button_filters" type="button"><img src="images/icon_filters.png"><span class="text_filter">ФІЛЬТР</button>
 			</div>
+        
+        <div class="filters_range">
         <p>Ціна:</p>
-        <div>
         <input type="range" id="start" name="price" min="0" max="5000" step="any">
         </div>
     
-			<div class="form_composition">
-        <p>Букети з:</p>
-        <label><input type="checkbox" ...>Роз</label>
-        <label><input type="checkbox" ...>Лілій</label>
-        <label><input type="checkbox" ...>Орхідей</label>
-        <label><input type="checkbox" ...>Гербер</label>
-      
-          <p>Кому:</p>
-        <label><input type="checkbox" ...>Жінкам</label>
-        <label><input type="checkbox" ...>Чоловікам</label>
-        <label><input type="checkbox" ...>Дітям</label>
-        <label><input type="checkbox" ...>Сімї</label>
+			<div class="filters_block">
+        <strong>Букети з:</strong><br/>
+        <div class="form_checkbox">
+        <label for="ros"><input id="ros" type="checkbox" name="Роз" checked>Роз</label>
+        <label for="lil"><input id="lil" type="checkbox" name="Лілій">Лілій</label>
+        <label for="orh"><input id="orh" type="checkbox" name="Орхідей">Орхідей</label>
+        <label for="her"><input id="her" type="checkbox" name="Гербер">Гербер</label>
+      </div>
       </div>
 
-      <div class="section_catalog_search">
-				
-			</div>
-    </div>    <!-- закриваємо розмір 25% для фільтрів-->
-			</div>   <!-- закриваємо flex для поділу на два стовчика-->
-      </div>		<!-- закриваємо розмір 1280рх і відступи для каталога і фільтрів-->
-	</div>		<!-- закриваємо розмір 100% для каталога-->
+      <div class="filters_block"> 
+        <strong>Кому:</strong><br/>
+        <div class="form_checkbox">
+        <label for="wom"><input id="wom" type="checkbox" name="Жінкам">Жінкам</label>
+        <label for="man"><input id="man" type="checkbox" name="Чоловікам">Чоловікам</label>
+        <label for="chi"><input id="chi" type="checkbox" name="Дітям" checked>Дітям</label>
+        <label for="fam"><input id="fam" type="checkbox" name="Сімї">Сімї</label>
+      </div>
+      </div>
+
+          <div class="section_search">
+            <strong>Пошук:</strong><br/>
+            <form class="button_search" action="" method="get">    <!-- форма пошуку-->
+            <input type="search" placeholder="Що Ви шукаєте?">
+              <button type="submit"><img src="images/button_search.png" alt="search button"></button>
+            </form> 
+          </div>
+    </div>   <!-- закриваємо розмір 25% для фільтрів-->
+  </div>		<!-- закриваємо розмір 1280рх і відступи для каталога і фільтрів-->
+	<div class="my_body_flex">
+    <div class="nav_number">
+      <button class="button_nav_number" type="button">1</button>
+      <button class="button_nav_number" type="button">2</button>
+      <button class="button_nav_number" type="button">3</button>
+      <button class="button_nav_number" type="button">4</button>
+    </div>
+  </div>
+  
+  <div class="news_inner">
+    <p>Останні новини</p>
+    <div class="news_previev">
+      <div class="news_news"> <!-- новини-слайдер-->
+        <div class="news_previev_img">
+          <a href="/news_1.html">
+            <img class="photo" src="images/news_1.jpg">
+          </a>
+        </div>
+            <p></p>
+              <time datetime="2014-09-25"> 01.01.2019</time><br/>
+        
+          <a href="news_1.html">
+            З новим роком 2019!
+          </a>
+      </div>    <!-- закінчення новини-слайдер-->
+            <div class="news_news"> <!-- новини-слайдер-->
+        <div class="news_previev_img">
+          <a href="/news_2.html">
+            <img class="photo" src="images/news_2.jpg">
+          </a>
+        </div>
+            <p></p>
+              <time datetime="2014-09-25"> 01.01.2019</time><br/>
+        
+          <a href="news_2.html">
+            Як прикрасити дім до Нового року?
+          </a>
+      </div>    <!-- закінчення новини-слайдер-->
+      <div class="news_news"> <!-- новини-слайдер-->
+        <div class="news_previev_img">
+          <a href="/news_3.html">
+            <img class="photo" src="images/news_3.jpg">
+          </a>
+        </div>
+            <p></p>
+              <time datetime="2014-09-25"> 01.01.2019</time><br/>
+        
+          <a href="news_3.html">
+            Розіграш новорічного подарунку
+          </a>
+      </div>    <!-- закінчення новини-слайдер-->
+
+
+    </div>    <!-- закриваємо карточку товарів-->
+      </div>
+    </div>
+  </div>
+  
+
+  </div>		<!-- закриваємо розмір 100% для каталога-->
 	</div>
 
 </body>

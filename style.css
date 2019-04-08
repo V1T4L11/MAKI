@@ -58,7 +58,7 @@ body {
 }
 
 .form_search input {
-	height: 40px;
+	height: 42px;
 	width: 100%;    /*видимість тексту шукати тут*/
 	padding: 0 40px 0 15px;    /*відступи тексту "шукати тут"*/
 	border: none;
@@ -89,6 +89,7 @@ body {
 	top: 0;
 	right: 0;
 	cursor: pointer;
+	border-radius: 5px;
 	/*pointer-events: none;*/
 }
 
@@ -133,13 +134,15 @@ body {
 	width: 150px;
 	cursor: pointer;
 	color: white;
+	border-radius: 5px;
+	border: none;
 }
 
 .header_image_menu {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background: rgba(255,255,255,.6);
+	background: rgba(255,255,255,.8);
 	height: 160px;
 	text-align: center;
 }
@@ -164,9 +167,12 @@ body {
 }
 
 .product_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: calc(100% / 4);
 	margin: 0 0;
-	/*height: 390px;*/
+	height: 480px;
 	text-align: center;
 	padding: 15px 0 0 0;
 	border: 1px solid #eee;		/*рамка*/
@@ -182,13 +188,19 @@ body {
 	transform: scale(1.1);
 }
 
-.product_img img {
+.photo {
 	/*display: block;*/
 	width: 200px;
 }
 
+.new_hit {
+	position: absolute;
+	/*max-width: 48px;*/
+	height: 48px;
+}
+
 .product_list {
-	padding: 60px 0;
+	padding: 30px 0;
 }
 
 .product_list a {
@@ -202,6 +214,7 @@ body {
 .price {
 	font-size: 17px;
 	display: block;
+	margin: 30px 0
 }
 
 .button_order {
@@ -210,22 +223,25 @@ body {
 	height: 50px;
 	width: 150px;
 	color: white;
+	border: none;
 }
 
 .flex_filters_search {
 	width: 25%;
+	padding-left: 20px;
 }
 
-.section_catalog_filters {
-	display: flex;
-}
+/*.section_catalog_filters {
+	
+}*/
 
 .button_filters {
 	border-bottom: 2px solid transparent;
 	border-color: #ff6d6d;
 	background-color: white;
-	height: 50px;
+	height: 42px;
 	width: 150px;
+	border-radius: 5px;
 }
 
 .text_filter {
@@ -233,3 +249,95 @@ body {
 	font-size: 15px;
 }
 
+.filters_block {
+	padding: 20px 0px;
+}
+
+.filters_range {
+	padding: 20px 0;
+}
+
+.form_checkbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form_checkbox label {
+	display: block;
+	width: 50%;
+	padding: 5px 5px 5px 0px;
+}
+
+.form_checkbox input {
+	margin: 0;
+}
+
+.section_search {
+	padding: 20px 0;
+}
+.button_search {
+	position: relative;
+	width: 90%;
+	height: auto;
+	/*margin: 0 auto;*/
+}
+
+.button_search input {
+	height: 42px;
+	width: 95%;    /*видимість тексту шукати тут*/
+	padding: 0 40px 0 15px;    /*відступи тексту "шукати тут"*/
+	border: 2px solid #ff9999;
+	border-radius: 5px;
+	outline: none;
+	background: white;
+}
+
+.button_search button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background: #ff9999;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.button_search img {
+    max-height: 100%;
+    width: auto;
+}
+
+.nav_number {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+.nav_number button {
+	display: block;
+	height: 42px;
+	width: 42px;
+	border: 2px solid #ff9999;
+	background-color: white;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.nav_number button:hover {
+	background-color: #ff9999;
+}
+
+.news_inner {
+}
+
+.news_previev {
+	display: flex;
+	justify-content: space-around;
+	/*height: 313px;*/
+}
+
+.news_previev_img {
+	height: 214px;
+}
