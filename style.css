@@ -329,15 +329,30 @@ body {
 	background-color: #ff9999;
 }
 
-.news_inner {
+.news_inner p {
+	font-size: 18px;
 }
 
 .news_previev {
 	display: flex;
 	justify-content: space-around;
-	/*height: 313px;*/
+	margin: 30px 50px;
 }
 
-.news_previev_img {
+.news_news {
+	width: calc(100% / 3);
+	margin: 0 0;
+	height: 300px;
+	text-align: left;
+	padding: 0 15px 0 15px;
+	overflow: hidden;		/*обрізати вміст по рамку без полоси прокрутки*/
+}
+
+.news_news img {
+	width: 100%;
 	height: 214px;
+}
+
+.news_news p {
+	margin-top: auto;
 }
