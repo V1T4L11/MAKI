@@ -329,8 +329,18 @@ body {
 	background-color: #ff9999;
 }
 
+.news_inner {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 67px;
+}
+
 .news_inner p {
-	font-size: 18px;
+	font-size: 22px;
+}
+
+.news_inner a {
+	margin: 22px 0;
 }
 
 .news_previev {
@@ -339,11 +349,17 @@ body {
 	margin: 30px 50px;
 }
 
+
 .news_news {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	width: calc(100% / 3);
 	margin: 0 0;
 	height: 300px;
+	text-decoration: none;
 	text-align: left;
+	color: black;
 	padding: 0 15px 0 15px;
 	overflow: hidden;		/*обрізати вміст по рамку без полоси прокрутки*/
 }
@@ -354,5 +370,15 @@ body {
 }
 
 .news_news p {
-	margin-top: auto;
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+.news_news time {
+	font-size: 10px;
+	color: grey;
+}
+
+.news_news a:hover {
+	background: #ff9999;
 }
