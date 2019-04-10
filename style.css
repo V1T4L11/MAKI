@@ -231,6 +231,7 @@ body {
 	width: 150px;
 	color: white;
 	border: none;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .flex_filters_search {
@@ -329,6 +330,7 @@ body {
 	border: 2px solid #ff9999;
 	background-color: white;
 	margin: 0 5px;
+	border-radius: 5px 5px 5px 5px;
 	cursor: pointer;
 }
 
@@ -405,7 +407,45 @@ body {
 }
 
 .footer_grey_1 a {
-
 	color: gray;
 	padding: 10px 0;
+}
+
+.footer_pink {
+	
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.text_none {
+	text-decoration: none;
+}
+
+.footer_pink_2019 {
+	display: inline-block;
+	width: 210px;
+}
+
+.footer_pink_tel_mail {
+	width: 330px;
+	float: right;
+}
+
+.footer_pink_tel_mail p {
+	display: inline-block;
+}
+
+.footer_pink_tel_mail a {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.size_14 {
+	font-size: 14px;
+}
+
+.lilak {
+	background-color: #ff9999;
 }
